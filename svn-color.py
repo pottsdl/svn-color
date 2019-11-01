@@ -44,7 +44,9 @@ def colorize(line):
 
 if __name__ == '__main__':
     command = sys.argv
-    command[0] = '/usr/bin/svn'
+    # DLP, don't ASSUME right path to 'svn' is /usr/bin, let $PATH take care of that
+    #command[0] = '/usr/bin/svn'
+    command[0] = 'svn'
     
     if len(command) > 1:
         subcommand = (command[1], '')[len(command) < 2]
