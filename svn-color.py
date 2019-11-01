@@ -15,13 +15,13 @@
 import sys, subprocess
 
 colorizedSubcommands = (
-	'status',
-	'stat',
-	'st',
-	'add',
-	'remove',
-	'diff',
-	'di',
+    'status',
+    'stat',
+    'st',
+    'add',
+    'remove',
+    'diff',
+    'di',
 )
 
 statusColors = {
@@ -62,3 +62,5 @@ if __name__ == '__main__':
         task = subprocess.Popen(command)
     task.communicate()
     sys.exit(task.returncode)
+
+# vim: expandtab tabstop=4 shiftwidth=4 softtabstop=4 :
